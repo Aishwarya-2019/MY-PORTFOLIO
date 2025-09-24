@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5c17961070.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">Welcome</a>
+    <nav class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section class="Home">
+    <div class="Home-content">
+      <h1>Hi there👋<pre>I'm <span>Aishwarya</span></pre></h1>
+      <h3><span class="multiple-text"></span></h3>
+    </div>
+    <div class="Home-img">
+      <img src="bgdd-Photoroom.jpg">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="profilepic.png" alt="Profile Pic" width="400" height="400">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            An entry-level Frontend developer eager to build engaging user interfaces and seamless digital experiences.  
+            Though I am at the beginning of my tech journey, I am always up for a challenge and love translating creative concepts into real-world solutions.
+          </p>
+          <div class="tabtitles">
+            <button class="tablinks activelink" onclick="opentab('Skills', event)">Skills</button>
+            <button class="tablinks" onclick="opentab('Education', event)">Education</button>
+          </div>
+          <div class="tabcontents activetab" id="Skills">
+            <ul>
+              <li>&#11166;HTML</li>
+              <li>&#11166;CSS</li>
+              <li>&#11166;JavaScript</li>
+              <li>&#11166;Java</li>
+              <li>&#11166;MySQL</li>
+              <li>&#11166;Tailwind CSS</li>
+              <li>&#11166;REST API</li>
+            </ul>
+          </div>
+          <div class="tabcontents" id="Education">
+            <ul>
+              <li><span>&#11166;2023-2025</span><br>MSC CS, Sathyabama University</li>
+              <li><span>&#11166;2020-2023</span><br>BSC CS, Anna Adarsh College for Women</li>
+              <li><span>&#11166;2019-2020</span><br>12th Standard (PCM Major), St. Thomas School</li>
+              <li><span>&#11166;2017-2018</span><br>10th Standard , Alpha School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--EXPERIENCE-->
+  <section id="experience">
+  <div class="experience-container">
+    <h1 class="subtitle">Experience</h1>
+    <div class="experience-card">
+      <div class="exp-icon">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <h2>Frontend Developer Intern at Least Action</h2>
+      <p>Developed a reusable services card component in React with Tailwind CSS and dynamically rendered multiple service modules using map() for scalability and responsiveness.</p>
+      <span class="exp-duration">August - 2025</span>
+    </div>
+  </div>
+</section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+  <div class="container">
+    <h1 class="subtitle">My Work</h1>
+    <div class="worklist">
+      <div class="work">
+        <img src="agriportal.jpg" alt="Agriculture Portal">
+        <div class="layer">
+          <h3>Agriculture Portal</h3>
+          <p>Developed a Machine Learning–based Agriculture Portal with crop, fertilizer, rainfall, and yield predictions, integrated Stripe payments for direct crop sales, and added supporting features like chatbot, weather forecast, and agriculture news.</p>
+          <a href="https://github.com/Aishwarya-2019/agriculture-portal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="imagesearchengine.jpg" alt="Image Search Engine">
+        <div class="layer">
+          <h3>Image Search Engine</h3>
+          <p>Developed a tool for intuitive image searches with JS and Unsplash API.</p>
+          <a href="https://aishwarya-2019.github.io/Image-Search-Engine/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Weather-app.jpg" alt="Weather App">
+        <div class="layer">
+          <h3>Weather App</h3>
+          <p>Live weather application using OpenWeatherAPI.</p>
+          <a href="https://aishwarya-2019.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+        <a href="https://github.com/Aishwarya-2019?tab=repositories" target="_blank">See more</a>
+      </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h1 class="subtitle">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> aishwaryaa1903@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i> +91 8939552896</p>
+        <div class="socialicons">
+          <a href="https://www.linkedin.com/in/aishwarya-n-519b68227/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Aishwarya-2019" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://medium.com/@aishwaryaa1903" target="_blank"><i class="bx bxl-medium"></i></a>
+        </div>
+        <div class="btn-box">
+          <a href="Aishwarya résumé.pdf" download target="_blank">&nbsp;&nbsp;Download &nbsp;&nbsp;Resume</a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <img src="career-girl.png">
+      </div>
+    </div>
+    <footer class="copyright">
+      <p>&lt;&lt;&lt; &copy;2025 Created with <i class="fa-solid fa-heart"></i><sup>∞</sup> by Aishwarya🦋&gt;&gt;&gt;</p>
+    </footer>
+    <a href="#" id="toTop" style="display: block;">
+      <span id="toTopHover" style="opacity: 0;"></span>Back
+    </a>
+  </section>
+
+  <!-- Tabs Script (About) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+  const typed = new Typed('.multiple-text', {
+  strings: ['Frontend Developer', 'Content Writer'],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 1000,
+  loop: true,
+  onBegin: function(self) {
+    document.querySelector('.multiple-text').style.opacity = 1;
+  }
+});
+   var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+    function opentab(tabname, event) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("activelink");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("activetab");
+      }
+      event.currentTarget.classList.add("activelink");
+      document.getElementById(tabname).classList.add("activetab");
+    }
+  </script>
+  <!-- Hamburger Menu Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const navbar = document.querySelector('.navbar');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('open');
+    });
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
