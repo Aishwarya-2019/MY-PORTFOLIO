@@ -399,11 +399,15 @@ body {
   display: flex; align-items: center; justify-content: center; flex-direction: column;
   padding: 10 40px; text-align: center; font-size: 14px; transition: height 0.5s;
 }
-.layer h3 { font-weight: 800; margin-bottom: 20px; font-size: 30px; }
-.layer p{text-align:center; padding: 30px;}
+.layer h3 { font-weight: 800; margin: 10px 50px; font-size: 30px; }
+.layer p{text-align:justify; padding: 30px; font-size: medium;}
 .layer a {
   margin-top: 10px; color: #00abf0; font-size: 18px; background: #fff;
   width: 60px; height: 60px; border-radius: 50%; text-align: center; display: inline-block; line-height: 60px; }
+.layer {
+  overflow-y: auto;
+}
+
 .btn {
   position: relative;
   display: flex;
@@ -630,6 +634,7 @@ body {
 /* ---------- Animations (optional) ---------- */
 @keyframes showRight { 100% { width: 0; } }
 @keyframes manipActiveHover { 100% { pointer-events: auto; } }
+
 
 
 
